@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>calendar</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<style>
+h1, h2, h3, p, td, th {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top:    1px solid;
+    border-bottom:    1px solid;
+}
+
+.urgent {
+    color: red;
+}
+
+.holiday {
+    color: green;
+}
+
+.calendar {
+    color: blue;
+}
+</style>
+<h1 id="cis-2450-schedule---fall-2024">CIS 2450 Schedule - Fall
+2024:</h1>
+<p><em>Prerequisites: This class assumes CIS 1200 and familiarity with
+Python. Readings are available for learning Python as a Java
+programmer.</em></p>
+<h2 id="weekly-schedule">Weekly Schedule:</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Date</th>
+<th>Subject</th>
+<th>Quizzes</th>
+<th>Assignments</th>
+<th>Readings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08-27</td>
+<td><em>First day of classes</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>08-27</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EVmkY-VAo-tGqXBQZ_A0sbMBlBIUqPQEciNvK75guHzvMQ?e=78uL9p">Introduction
+to Big Data Analytics</a></strong></td>
+<td>Big data analytics<br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804159">The
+need to model, clean, and integrate data</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804161">Features
+and learning</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804163">Tasks
+and goals</a><br/>Course details and logistics</td>
+<td><a target="_blank"
+href="https://colab.research.google.com/drive/1_5HQSAZo9duUme80Ccv2qSg6c3ACDv6T">Homework
+0, Preparation</a></td>
+<td><a target="_blank"
+href="https://hbr.org/2018/08/what-data-scientists-really-do-according-to-35-data-scientists">What
+Data Scientists Really Do</a><br/><a target="_blank"
+href="https://www.xplenty.com/blog/data-engineering-what-does-a-data-engineer-do-how-do-i-become-one/#:~:text=As%20a%20part%20of%20their,data%20modeling%2C%20and%20data%20mining.">What
+Does a Data Engineer Do?</a></td>
+</tr>
+<tr>
+<td>08-29</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EQ3PEsF7wyNJk2MSsiQhyzQBvVRJbSshP9gPmdkuxnVNOw?e=NUKIc7">Data
+Acquisition, Wrangling and Data from the Web</a></strong> <br/>
+<em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/Module_1_Data_Acquisition.ipynb">Lecture
+Module 1 Notebook Part 1</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804165">Overview
+of acquisition and wrangling</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804167">Steps
+in structuring data</a><br/>An example to drive our discussion<br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804170">Reading
+structured data</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804172">The
+challenges of HTML and XML data</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804174">Understanding
+DOM and XPath</a><br/>Completing our acquisition</td>
+<td></td>
+<td><a target="_blank"
+href="https://github.com/wesm/pydata-book/blob/2nd-edition/ch06.ipynb">McKinney,
+Chapter 5, Data Loading and Storage</a><br/><a target="_blank"
+href="https://www.w3schools.com/xml/xpath_intro.asp">W3Schools XPath
+Tutorial</a><br/><a target="_blank"
+href="https://www.geeksforgeeks.org/introduction-to-web-scraping/">Introduction
+to Web Scraping</a></td>
+</tr>
+<tr>
+<td>09-02</td>
+<td><em>Labor Day (no classes)</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77ff2fe8-ab35-4442-b406-b1e10028f7e0">Python
+review, getting started with Colab</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/cis2450lab1nb.ipynb">Python
+getting started notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td><a target="_blank"
+href="https://github.com/blu3r4y/python-for-java-developers?tab=readme-ov-file">Python
+Crash Course for Java Developers</a><br/><a target="_blank"
+href="https://aryaboudaie.com/java/python/technical/educational/2017/11/13/python-for-java-programmers.html">Python
+for Java Programmers I</a><br/><a target="_blank"
+href="https://aryaboudaie.com/java/python/technical/educational/2018/09/16/python-for-java-programmers-p2.html">Python
+for Java Programmers II</a></td>
+</tr>
+<tr>
+<td>09-03</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/Ebc7VUMu7eZPpcO1_Sd59N4BIbkv4yEmV5t0uigW2JGvwg?e=mx1aFe">Combining
+DataFrames with Queries</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/Module_1_Data_Acquisition_Wrangling_II.ipynb">Lecture
+Notebook Module 1 Part II</a> with exercises</td>
+<td>Overview of data transformation tasks<br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804179">Columnwise
+operations</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804181">Filtering
+rows</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804183">Joining
+tables</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://github.com/wesm/pydata-book/blob/2nd-edition/ch07.ipynb">McKinney,
+Chapter 7</a><br/><a target="_blank"
+href="https://github.com/wesm/pydata-book/blob/2nd-edition/ch09.ipynb">McKinney,
+Chapter 9</a><br/><a target="_blank"
+href="https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html"><em>Optional</em>:
+McKinney, Chapter 8</a><br/><a target="_blank"
+href="https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html">Pandas
+comparison with SQL</a><br/><a target="_blank"
+href="https://www.parsehub.com/blog/web-scraping-ethical/">Is web
+scraping ethical?</a></td>
+</tr>
+<tr>
+<td>09-05</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/ES67TIJLieVOnYAgzlJ5hdgB3ClXNe1Uqsg6tF73EIPhuQ?e=NroPAX">Data
+Cleaning &amp; Record Linking</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/Module_1_Data_Acquisition_Wrangling_Linking_III.ipynb">Lecture
+Module 1 Notebook Part III</a> with exercises</td>
+<td>Overview of cleaning and linking<br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804189">Data
+validation</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804191">Record
+linking</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804193">ETL</a></td>
+<td><a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/HW1_Fall_2024_Student_Version.ipynb">Homework
+1</a></td>
+<td><a target="_blank" href="https://arxiv.org/pdf/2309.00789">Aurora and Dell.
+LinkTransformer: A Unified Package for Record Linkage with Transformer
+Language Models</a><br/><a target="_blank"
+href="https://dl.acm.org/doi/abs/10.14778/2367502.2367564?casa_token=TTUZg39WdGcAAAAA:hRa85e0p0j2IMZmAzmneOxBFktwI7yC0ZFQcpyeMn3t-DGoLH9XWh1xpcTnA7XTKc0GwEAW4RE0e">Getoor
+and Machanavajhala. Entity resolution: theory, practice &amp; open
+challenges. Getoor and Machanavajjhala</a><br/><a target="_blank"
+href="http://www.vldb.org/pvldb/vol7/p697-gruenheid.pdf">Gruenheid, et
+al. Incremental Record Linkage</a></td>
+</tr>
+<tr>
+<td>09-10</td>
+<td><em>Course Selection Period ends</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c1c582b-3447-4a59-91c4-b1e6010f6cc5">Getting
+Comfortable with Pandas</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/cis2450lab2nb.ipynb">Pandas
+exercise notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>09-10</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/Ea2qN5NWJblDlBkSAucLY84BFVG0J1crrrU-c5UVuTfyrw?e=PHmuvb">Data
+Acquisition Ethics, NLP and Information Extraction I</a></strong></td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules#:~:text=Quiz-,03E%3A%20Brief%20review%20of%20ethical%20principles%20around%20data,-Sep%2010">Data
+science ethics: data acquisition</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804196">Aggregation
+for analytics</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63">Introduction
+to Natural Language Processing for Text</a><br/><a target="_blank"
+href="https://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf">Manning.
+Information Retrieval, Chapter 6:Scoring, term weighting and the vector
+space model</a></td>
+</tr>
+<tr>
+<td>09-12</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EcVswmoQPkNIm-rlWGqOncsBWXGv652-lWvyHb4okZ7srQ?e=69lax5">NLP
+and Information Extraction II</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/Module_1_Part_2_Natural_Language_Processing.ipynb">Lecture
+Module 1 Notebook Part IV</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804200">Sentiment
+analysis</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules#:~:text=Quiz-,05D%3A%20Brief%20review%20of%20named%20entity%20recognition,-Sep%2024">Named
+entity recognition</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804206">Relation
+extraction</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804208">Ethics
+of data linking</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://towardsdatascience.com/ner-with-transformers-and-spacy-b3240bc65eb4">NER
+With Transformers And spaCy</a></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=444af685-ace4-4bcc-80db-b1ea016925d4">Getting
+Started with SQL</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/cis2450lab3nb.ipynb">SQL
+getting started notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>09-17</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EZAV7JmCzztGo5If9eLhtroB_3hiPlCjdjvzqToLQ8B3Zg?e=be5bri">Logically
+Modeling Concepts and Data</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/5_Module_2_Data_Modeling_and_Decomposition.ipynb">Lecture
+Module 2 Notebook Part I</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804165">Knowledge
+representation using logic</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804213">Knowledge
+graphs</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804215">Storing
+entities and relationships</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://www.aaai.org/Papers/AAAI/1990/AAAI90-161.pdf">Brachman:
+The Future of Knowledge Representation</a></td>
+</tr>
+<tr>
+<td>09-19</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/Ecucp5gIPhVNukh4SYI2IogBRcf2tgAPB2ICweNC66Boww?e=xopGGN">Hierarchical
+Data and Efficient Computation</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/6_Module_2_Query_Processing.ipynb">Lecture
+Module 2 Notebook II</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804217">Hierarchical
+storage and NoSQL</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804219">Hierarchy
+and relations</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804222">Computer
+architecture basics</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://www.mikealche.com/software-development/a-humble-guide-to-database-schema-design">Alche:
+A humble guide to database schema design</a></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d7171f23-e8d6-4e8a-bbb5-b1f30086acbf">Extracting
+Information from Documents</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/cis2450lab4nbpt1.ipynb">Extracting
+Structured Information notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5cca29f9-2a70-45f3-b5db-b1f8006b30da">Synthetic
+Data Generation</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/lab4_part2_SyntheticDataGeneration.ipynb">Synthetic
+Data Generation notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>09-24</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EaepWvuC-i9PhHJutW2PWD0B7tndVc6hey97-bG8iO0njw?e=tqLeTZ">Efficiently
+Computing over Data</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/7_Module_2_Part_III_Better_SQL.ipynb">Lecture
+Module 2 Notebook III - Advanced SQL and debugging</a> with
+exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804224">Optimizing
+relational algebra</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804226">Join
+ordering</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804228">Improving
+algorithmic efficiency</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804231">Parallel
+programming for multicore</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804233">Clusters
+and data centers</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804236">Programming
+for clusters</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://www.sqlshack.com/query-optimization-techniques-in-sql-server-the-basics/">Query
+optimization techniques in SQL Server: the basics</a><br/><a target="_blank"
+href="https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6#.9mndt52nc&#39;">How
+Sharding Works</a><br/><a target="_blank"
+href="https://medium.com/swlh/revealing-apache-spark-shuffling-magic-b2c304306142">Revealing
+Apache Spark Shuffling Magic</a></td>
+</tr>
+<tr>
+<td>09-26</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EclN5fMX-tFOnCinBvJqW20B_JGqb2lGRPAph2TcDEGDkQ?e=VCgjmA">Cloud
+and Cluster Data Processing</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/8_Module_2_Part_IV_Parallelism.ipynb">Lecture
+Module 2 Notebook IV</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804238">Apache
+Spark basics</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804240">Elastic
+MapReduce</a></td>
+<td><a target="_blank"
+href="https://colab.research.google.com/drive/1cV2l4AoEhysAQyW_hpge2XE0pSl11TfE?usp=sharing">Homework
+2</a></td>
+<td><a target="_blank"
+href="https://medium.com/@achilleus/https-medium-com-joins-in-apache-spark-part-1-ce289bfc84c9">Joins
+in Apache Spark</a><br/><a target="_blank"
+href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge">The
+Friendship that Made Google Huge</a></td>
+</tr>
+<tr>
+<td>10-01</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EclN5fMX-tFOnCinBvJqW20B_JGqb2lGRPAph2TcDEGDkQ?e=VCgjmA">Big
+Data and the Cloud; Graph Data</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/9_Module_2_Notebook_V_Big_Data.ipynb">Lecture
+Module 2 Notebook Part V</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804243">Spark
+on a cluster</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804245">Storing
+data on the cloud</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804247">View
+materialization</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804249">Graph
+basics</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804251">Graph
+analysis</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804254">Path
+traversal</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804256">Distributed
+path traversal</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804258">BFS
+applications</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://docs.google.com/document/d/e/2PACX-1vTXKkEI9im2BQFxCqVeMfwRl42xIhaIqIYEpqsh1zGDqSvUg_kV8B0yHobb8a1tK47WpcJNE48orFVt/pub">Getting
+started with AWS</a></td>
+</tr>
+<tr>
+<td>10-03</td>
+<td><em>Fall Term Break</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-07</td>
+<td><em>Classes resume</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-07</td>
+<td><em>Drop Period ends</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-08</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/Ec5pp3_jE0pIsRNowQpfIysBG3yir47kborAiN25d5jV6Q?e=Jk3vp4">Big
+Graph Data and Link Analysis</a></strong></td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804243">Link
+analysis</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804262">Basic
+PageRank</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804265">Basic
+PageRank implementation</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804267">PageRank
+using matrices</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-10</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EeuDF2kJwm9Eo16IWDzWgRIBVlYLX0TCS8j-e193FgNmJw?e=E5w81w">Data
+Visualization</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/11_Module_3_Part_1_Data_Visualization.ipynb">Lecture
+Module 3 Notebook Part I</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804270">PageRank
+on Spark</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804279">Visualization
+for data science</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804283">Visualizing
+statistical data</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804285">Interactive
+visualization</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804287">Data
+visualization ethics</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://towardsdatascience.com/the-curse-of-dimensionality-5673118fe6d2">The
+curse of dimensionality</a></td>
+</tr>
+<tr>
+<td>10-14</td>
+<td><em>Indigenous People’s Day (University open; Classes in
+session)</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b3855903-75ea-4b2e-a3ba-b206003e3896&amp;edit=true">Spark
+and Data Visualization</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/lab6_solutions.ipynb">Spark
+and Data Visualization notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Recitation</em>: <strong>Midterm review</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-15</td>
+<td><strong>Midterm</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-17</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EWLb6w1xuEtMsxYOZtANxswBHDWeD6H25dvPKTmf8xyVEg?e=thsD8x">Dashboards
+and Statistical Tests’</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/12_Module_3_Part_II_Interactive_Streamlit.ipynb">Lecture
+Module 3 Notebook Part II</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804276">Statistical
+tests</a></td>
+<td><a target="_blank"
+href="https://drive.google.com/file/d/1QE0xkVJ9mL4sEyS7uiHol3FMPn9cFlXP/view?usp=sharing">Homework
+3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>10-22</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/ERt22lcJbn5Kpos8QiJNIgQBJzDhqYovhjbexMsfu8xcxA?e=FizpsV">Principal
+Components Analysis</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/13_Module_3_Notebook_I_DimReduction.ipynb">Lecture
+Module 3 Notebook I - Dimensionality Reduction</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/30804272">Arrays
+for ML</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750686">Dimensionality
+reduction</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750688">Applying
+PCA</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750690">PCA
+on Spark</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750692">t-SNE</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://medium.com/fintechexplained/what-are-eigenvalues-and-eigenvectors-a-must-know-concept-for-machine-learning-80d0fd330e47">What
+are eigenvectors and eigenvalues?</a></td>
+</tr>
+<tr>
+<td>10-24</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EXtx59LA_odHjUnY8GKE5-cBhgw5pX5yVYJ27ieMNs-5qg?e=GQPwEE">Clustering</a></strong>
+<br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/14_Module_3_Notebook_II_Clustering.ipynb">Lecture
+Module 3 Notebook II - Clustering</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750695">k-Means
+clustering</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750697">K-means
+on big data</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750699">Advanced
+k-means</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/">Get
+the optimal k in k-means clustering</a></td>
+</tr>
+<tr>
+<td>10-25</td>
+<td><em>Grade Type Change Deadline</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-25</td>
+<td><em>Family Weekend</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-28</td>
+<td><em>Advance Registration for Spring Term</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30e8836c-7bb2-4e63-9beb-b20d003bb1b7">Unsupervised
+Machine Learning</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/CIS_2450_Lab_7_Unsupervised_Machine_Learning.ipynb">Unsupervised
+ML notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-29</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EXToINnS1B5GstYCVTU2PW0Bv3h4-PgekLsj_t2U_CVGzA?e=SNUW3s">Classification</a></strong>
+<br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/15_Module_3_Notebook_III_Decision_Trees.ipynb">Lecture
+Module 3 Notebook Part II</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750704">Supervised
+ML</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750706">Classifiers
+and decision trees</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750708">Choosing
+split points</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750710">Building
+and using decision trees</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750712">Decision
+trees and overfitting</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10-31</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EbDP03jNh0pLoOXv7_gXqAEBEg9f5-hoosOIy8-C4G32hw?e=1yMBwU">Regression</a></strong>
+<br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/16_Module_3_Notebook_IV_Regression.ipynb">Lecture
+Module 3 Notebook Part IV</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750729">Regression
+basics</a></td>
+<td></td>
+<td><a target="_blank"
+href="https://machinelearningmastery.com/solve-linear-regression-using-linear-algebra/">How
+to solve linear regression using linear algebra</a><br/><a target="_blank"
+href="https://towardsdatascience.com/how-to-detect-and-deal-with-multicollinearity-9e02b18695f1">How
+to detect and deal with multicollinearity</a></td>
+</tr>
+<tr>
+<td>11-04</td>
+<td><em>Last day to withdraw from a course</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-05</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EVxXJQpUj4NBsGjxeu5tNxQBnn98cw7AFT_8jOJK0pMTOw?e=blHrg2">Logistic
+Regression and Model Tuning Part I</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/16_Module_3_Notebook_IV_Regression.ipynb">Lecture
+Module 3 Notebook Part IV</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750716">Regularization</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750733">Logistic
+regression</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750735">Logistic
+regression in Python</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750737">Gradient
+descent</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750739">Implementing
+logistic regression</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750715">Model
+performance</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750717">Feature
+scaling</a></td>
+<td><a target="_blank"
+href="https://drive.google.com/file/d/1gvaViYXwMw3GJ1RukV3a_u57ULNtvKKC/view?usp=sharing">Homework
+4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>(Video)</td>
+<td><em>Laboratory</em>: <strong><a target="_blank"
+href="https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5b33f79f-a27f-45d8-9c94-b222000a3daa">Linear
+Models</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/CIS_2450_Lab_8_Linear_Models.ipynb">Linear
+models notebook</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-07</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/ERkxBwvqHPBBiqbDAFKTTxgBsrsetAy9Ei0pSb7pll2xDA?e=PQSMjO">Building
+Better ML Models</a></strong></td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750719">Value
+imputation</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750721">Imbalance</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750723">Model
+complexity</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750725">Model
+tuning</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750727">Ensembles</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-12</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EQ8a7_5CQdZOgY438GxulOUBCvhjBBsl-NN1-Uirvj3svg?e=oBgdEp">Neural
+Networks</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/17_Module_3_Part_V_Neural_Nets.ipynb">Lecture
+Module 3 Notebook Part V</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750741">Artificial
+neurons</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750746">Single-layer
+networks</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750745">Multi-layer
+networks</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31750748">Feedforward
+and backpropagation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-14</td>
+<td><strong><a target="_blank"
+href="https://penno365-my.sharepoint.com/:p:/g/personal/zives_upenn_edu/EWuPCnKuQgpCgNbVHrk73doBrZBGrsVIPv6MxrJoMxvIBw?e=1Rmy6f">Neural
+Networks for Images</a></strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/18_Module_3_Part_VI_CNNs_and_Transfer_Learning.ipynb">Lecture
+Module 3 Notebook Part VI</a> with exercises</td>
+<td><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31885269">Convolutional
+neural networks</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31885271">CNN
+Architectures</a><br/><a target="_blank"
+href="https://canvas.upenn.edu/courses/1809215/modules/items/31885273">CNNs
+in PyTorch</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-16</td>
+<td><em>Homecoming</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-19</td>
+<td><strong>Analyzing Time-Varying Data</strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/19_Module_4_Part_I_Time_Varying.ipynb">Lecture
+Module 4 Notebook Part I</a> with exercises</td>
+<td></td>
+<td><a target="_blank" href="https://www.cis.upenn.edu/~cis2450/">Homework 5</a></td>
+<td></td>
+</tr>
+<tr>
+<td>11-21</td>
+<td><strong>Declarative Data Stream Processing</strong> <br/>
+<em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/20_Module_4_Part_II_SQL_Streaming.ipynb">Lecture
+Module 4 Notebook Part II</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-26</td>
+<td><em>Thur-Fri class schedule on Tue-Wed</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-26</td>
+<td><strong>Tuple-Level Stream Processing</strong> <br/> <em>and</em> <a target="_blank"
+href="https://colab.research.google.com/github/zackives/upenn-cis-2450/blob/main/21_Module_4_Part_III_Real_Time_Streams.ipynb">Lecture
+Module 4 Notebook Part III</a> with exercises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11-28</td>
+<td><em>Thanksgiving Break</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-02</td>
+<td><em>Classes resume</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-03</td>
+<td><strong>Transformers and Time-Varying Data</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-05</td>
+<td><strong>Machine Learning Acceleration and Pipelines</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-09</td>
+<td><em>Last day of classes</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-10</td>
+<td><em>Reading Days</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-12</td>
+<td><em>Final Examinations</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-12</td>
+<td><strong>Course Review</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-12</td>
+<td><strong>Final Examination</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
